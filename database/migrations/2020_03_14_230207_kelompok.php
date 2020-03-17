@@ -16,13 +16,12 @@ class Kelompok extends Migration
         Schema::create('kelompok', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('no');
-            $table->integer('nrp');
+            $table->decimal('nrp', 15, 0);
             $table->text('nama');
             $table->integer('kelompok');
             $table->text('hidro');
             $table->text('kemah_kerja');
             $table->text('satgas')->nullable();
-            $table->integer('ketua')->nullable();
             $table->timestamp('created_at')->useCurrent();
         });
     }
