@@ -14,7 +14,7 @@ class Kelompok extends Migration
     public function up()
     {
         Schema::create('kelompok', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->integer('no');
             $table->integer('nrp');
             $table->text('nama');
