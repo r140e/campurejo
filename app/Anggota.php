@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Kelompok extends Model
+class Anggota extends Model
 {
     protected $guarded = [''];
-    protected $table = 'kelompok';
+    protected $table = 'anggota';    
 }

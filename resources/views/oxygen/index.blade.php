@@ -26,12 +26,11 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-6">
-					<p>Campurejo adalah sebuah desa di Kecamatan Panceng, Kabupaten Gresik, provinsi Jawa Timur. Desa ini mempunyai kode bernomor 352503009</p> 
-					<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem minima.</p>
+					<p>Campurejo adalah sebuah desa di Kecamatan Panceng, Kabupaten Gresik, provinsi Jawa Timur. Campurejo merupakan desa yang berbatasan langsung dengan Kabupaten Lamongan, bentuk geografis Campurejo seperti pistol yang mana pada bagian visornya terdapat 4 desa yaitu Paloh, Weru, Sidokumpul, Waru Lor</p>
 				</div>
 				<div class="col-md-6">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo est quis mollitia ratione magni assumenda repellat atque modi temporibus tempore ex. Dolore facilis ex sunt ea praesentium expedita numquam?</p>
-					<p><a href="/campurejo" class="btn btn-primary">Selengkapnya</a></p>
+					<p>Campurejo dipilih menjadi tempat studi kasus untuk melaksanakan kegiatan kemah kerja dan hidrografi oleh Teknik Geomatika ITS angkatan 2017</p>
+					<p><a href="/web" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
 			</div>
 		</div>
@@ -48,30 +47,30 @@
 				<div class="col-md-4 col-sm-4">
 					<div class="feature-center animate-box" data-animate-effect="fadeIn">
 						<span class="icon">
-							<i class="icon-eye"></i>
+							<i class="icon-triangle-down"></i>
 						</span>
-						<h3>Retina Ready</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<h3>Survey Terestris</h3>
+						<p>Pengukuran dilakukan untuk mendapatkan bentuk topologi area studi kasus didarat menggunakan Waterpass, Total Station, GPS</p>
 						<p><a href="#" class="btn btn-primary">Learn More</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4">
 					<div class="feature-center animate-box" data-animate-effect="fadeIn">
 						<span class="icon">
-							<i class="icon-command"></i>
+							<i class="icon-anchor"></i>
 						</span>
-						<h3>Fully Responsive</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<h3>Survey Hidrografi</h3>
+						<p>Pengukuran ini dilakukan untuk mendapatkan bentuk geografis dari permukaan bawah laut yang sejajar dengan garis pantai</p>
 						<p><a href="#" class="btn btn-primary">Learn More</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4">
 					<div class="feature-center animate-box" data-animate-effect="fadeIn">
 						<span class="icon">
-							<i class="icon-power"></i>
+							<i class="icon-aircraft"></i>
 						</span>
-						<h3>Web Starter</h3>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+						<h3>Survey Eks Terestrial</h3>
+						<p>Pengukuran dilakukan menggunakan wahana terbang yaitu drone untuk memetakan areanya tanpa kontak dengan area secara fisik</p>
 						<p><a href="#" class="btn btn-primary">Learn More</a></p>
 					</div>
 				</div>
@@ -89,10 +88,8 @@
 								<span class="icon">
 									<i class="icon-eye"></i>
 								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="1006" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Titik Terestris</span>
-
+								<span class="counter js-counter" data-from="0" data-to="50" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Titik Kontrol</span>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animate-box">
@@ -100,9 +97,8 @@
 								<span class="icon">
 									<i class="icon-anchor"></i>
 								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="50" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Jalur Perum</span>
+								<span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Titik Detail</span>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animate-box">
@@ -110,8 +106,8 @@
 								<span class="icon">
 									<i class="icon-briefcase"></i>
 								</span>
-								<span class="counter js-counter" data-from="0" data-to="50" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Data Toponimi</span>
+								<span class="counter js-counter" data-from="0" data-to="5000" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Titik Kedalaman</span>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 animate-box">
@@ -119,9 +115,8 @@
 								<span class="icon">
 									<i class="icon-clock"></i>
 								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="240" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Total Pengerjaan</span>
+								<span class="counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Data Toponimi</span>
 
 							</div>
 						</div>
@@ -131,55 +126,50 @@
 		</div>
 	</div>
 
-	<div id="gtco-testimonial">
+	<div id="gtco-blog" class="gtco-section">
 		<div class="gtco-container">
-			<!-- <div class="row"> -->
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-						<h2>Testimonial</h2>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>Blog</h2>
+				</div>
+			</div>
+			<div class="row">
+				@if( count($entries) > 0 )
+				@php $index = 0; @endphp
+				@foreach($entries as $entry)    
+				<div class="col-md-4 col-xs-6 col-1 animate-box" data-animate-effect="fadeIn">
+					<div class="thumbnail">
+					<img src="{{ $entry->featuredImage->getFile()->getUrl() }}" alt="{{ $entry->title }}" class="img-rounded">
+					</div>
+					<div class="card-body">
+						@if( count($entry->categories) > 0 )
+							@foreach( $entry->categories as $cat )
+								<span>{{ $cat->name }}</span>
+							@endforeach
+						@else
+								<span>Uncategorized</span>
+						@endif
+						<h3>{{ $entry->title }}</h3>
+						<p>			
+						@php
+						$output = $renderer->render($entry->content);
+						echo Str::limit(strip_tags($output), 150);
+						@endphp
+						</p>												
+						<a href="/blog/{{ $entry->slug }}" class="btn btn-primary">Read More</a>
 					</div>
 				</div>
-				<div class="row animate-box">
-					
-				
-					<div class="owl-carousel owl-carousel-fullwidth ">
-						<div class="item">
-							<div class="testimony-slide active text-center">
-								<figure>
-									<img src="theme/oxygen/images/person_1.jpg" alt="user">
-								</figure>
-								<span>Jean Doe, via <a href="#" class="twitter">Twitter</a></span>
-								<blockquote>
-									<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-								</blockquote>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-slide active text-center">
-								<figure>
-									<img src="theme/oxygen/images/person_2.jpg" alt="user">
-								</figure>
-								<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-								<blockquote>
-									<p>&ldquo;Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-								</blockquote>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-slide active text-center">
-								<figure>
-									<img src="theme/oxygen/images/person_3.jpg" alt="user">
-								</figure>
-								<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-								<blockquote>
-									<p>&ldquo;Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-								</blockquote>
-							</div>
-						</div>
-					</div>
+				@endforeach
+				@else
+				<div class="card text-center">
+				<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				</div>
-			<!-- </div> -->
+				</div>
+				@endif
+			</div>
 		</div>
 	</div>
-
 @endsection

@@ -27,9 +27,8 @@ class BlogPostController extends Controller
     {
         $entries = $this->CQUERY->getEntriesByContentType('blogPost');
 
-        return view('blog.index', [
+        return view('oxygen.blog', [
             'entries'       => $entries,
-            'featured_post' => $entries[0] ?? null,
             'renderer'      => $this->renderer,
         ]);
     }

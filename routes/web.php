@@ -12,14 +12,28 @@
 */
 
 
-Route::get('/', function () {
-    return view('oxygen/index');
+Route::get('/', 'IndexController@index');
+
+Route::get('/web', function () {
+    return view('web');
+});
+
+Route::get('/panitia', function () {
+    return view('oxygen/panitia');
+});
+
+Route::get('/about', function () {
+    return view('oxygen/about');
+});
+
+Route::get('/contact', function () {
+    return view('oxygen/contact');
 });
 
 Route::get('/blog', 'BlogPostController@index');
 Route::get('/blog/{slug}', 'BlogPostController@show');
 
-Route::get('/anggota', 'KelompokController@index');
+Route::get('/anggota', 'AnggotaController@index');
 
 Auth::routes();
 

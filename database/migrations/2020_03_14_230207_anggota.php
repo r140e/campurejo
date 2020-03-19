@@ -13,7 +13,7 @@ class Kelompok extends Migration
      */
     public function up()
     {
-        Schema::create('kelompok', function (Blueprint $table) {
+        Schema::create('anggota', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('no');
             $table->decimal('nrp', 15, 0);
@@ -22,7 +22,6 @@ class Kelompok extends Migration
             $table->text('hidro');
             $table->text('kemah_kerja');
             $table->text('satgas')->nullable();
-            $table->timestamp('created_at')->useCurrent();
         });
     }
 
@@ -33,6 +32,6 @@ class Kelompok extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kelompok');
+        Schema::dropIfExists('anggota');
     }
 }

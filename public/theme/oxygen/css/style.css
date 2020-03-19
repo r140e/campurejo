@@ -1394,4 +1394,8 @@ form label {
   opacity: 0;
 }
 
+.card-body {
+  min-height: 270px;
+}
+
 /*# sourceMappingURL=style.css.map */
