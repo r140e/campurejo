@@ -35,7 +35,10 @@ Route::get('/blog/{slug}', 'BlogPostController@show');
 
 Route::get('/anggota', 'AnggotaController@index');
 
-Auth::routes();
+Auth::routes([
+'reset' => false, // Password Reset Routes...
+'verify' => false, // Email Verification Routes...
+]
+);
 
 Route::get('/home', 'HomeController@index')->name('home');
-

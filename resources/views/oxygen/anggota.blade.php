@@ -1,31 +1,22 @@
 @extends('layouts.oxygen')
 
 @section('content')
-	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image:url(theme/oxygen/images/img_bg_1.jpg);">
-
-	<div class="gtco-container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2 text-center">
-				<div class="display-t">
-					<div class="display-tc animate-box" data-animate-effect="fadeIn">
-						<h1>Anggota dan Satgas</h1>
-						<h2>Kemah Kerja Geomatika ITS ke X</h2>
-					</div>
-				</div>
-			</div>
+<header class="uk-section-xlarge uk-light uk-background-cover" style="background-image:url(theme/oxygen/images/img_bg_1.jpg);">
+	<div class="uk-container">
+		<div class="uk-card uk-text-center animate-box" data-animate-effect="fadeIn">
+			<h1 class="uk-h1">Anggota dan Satgas</h1>
+			<h2 class="uk-h2">Kemah Kerja Geomatika ITS ke X</h2>
 		</div>
 	</div>
 	</header>
 
-	<div id="gtco-services">
-		<div class="gtco-container">
-			
+	<section class="uk-section">
+    <div class="uk-container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
 					<h2>Satuan Tugas</h2>
 				</div>
 			</div>
-
 			<div class="row animate-box">
 				
 				<div class="gtco-tabs">
@@ -111,10 +102,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div id="gtco-features">
-		<div class="gtco-container">
+	<section class="uk-section">
+    	<div class="uk-container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
 					<h2>List Kelompok</h2>
@@ -137,7 +128,7 @@
 				@endfor
 			</div>
 		</div>
-	</div>	
+	</section>
 <!-- Modal -->					
 	@for($i=1; $i<=count($kelompok); $i++)
 	<div class="uk-modal-full" id="k{{ $i }}" uk-modal>

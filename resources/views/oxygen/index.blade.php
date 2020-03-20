@@ -128,7 +128,7 @@
     <h2 class="uk-text-center">Blog</h2>
     <hr class="uk-divider-small uk-text-center"/>
 
-		<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+		<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
 		@if( count($entries) > 0 )
 		@php $index = 0; @endphp
 		@foreach($entries as $entry) 
@@ -150,8 +150,8 @@
 					<h3 class="uk-card-title"><a href="/blog/{{ $entry->slug }}">{{ $entry->title }}</a></h3>
 					<p>
 					@php
-					$output = $renderer->render($entry->content);						
-					echo Str::limit(strip_tags($output), 150);						
+					$output = $renderer->render($entry->content);
+					echo Str::limit(strip_tags($output), 150);
 					@endphp
 					</p>
 				</div>

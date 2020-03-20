@@ -10,7 +10,7 @@
 	</header>
 	<section class="uk-section uk-section-muted uk-dark">
     <div class="uk-container">
-		<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
+		<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
 		@if( count($entries) > 0 )
 		@php $index = 0; @endphp
 		@foreach($entries as $entry) 

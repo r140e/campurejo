@@ -4,9 +4,11 @@
     <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
         <li><a href="/anggota">Anggota</a></li>
         <li class="uk-nav-divider"></li>
-        <li><a href="/web">Hasil</a></li>
+        <li><a href="/panitia">Panitia</a></li>
         <li class="uk-nav-divider"></li>
         <li><a href="/blog">Blog</a></li>
+        <li class="uk-nav-divider"></li>
+        <li><a href="/web">Hasil</a></li>
     </ul>
     </div>
 </div>
