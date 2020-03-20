@@ -36,7 +36,7 @@
 	<script src="{{ asset('/theme/oxygen/js/modernizr-2.6.2.min.js') }}"></script>
 </head>
 <body>
-	@include('layouts.partials.nav')
+	@include('layouts.partials.nav2')
         @yield('content')
 	@include('layouts.partials.sponsors')
 	@include('layouts.partials.footer')

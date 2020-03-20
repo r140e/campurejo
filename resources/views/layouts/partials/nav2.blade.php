@@ -1,4 +1,5 @@
-<nav class="uk-navbar-transparent uk-container uk-margin uk-light uk-position-top uk-position-z-index" uk-navbar="mode: click">
+<div class="uk-background-primary">
+<nav class="uk-navbar uk-container uk-light" uk-navbar="mode: click">
     <div class="uk-navbar-left">
         <a class="uk-navbar-item uk-logo" href="{{ url('/') }}"><img width="50" height="50" src="{{ asset('/img/its-putih.png') }}"/></a>
     </div>
@@ -32,3 +33,4 @@
         <a class="uk-navbar-toggle uk-hidden@s" href="#offcanvas-slide" uk-navbar-toggle-icon="" uk-toggle=""></a>
     </div>
 </nav>
+</div>

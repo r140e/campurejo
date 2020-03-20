@@ -41,7 +41,7 @@ class BlogPostController extends Controller
             abort(404);
         }
 
-        return view('blog.show', [
+        return view('oxygen.post', [
             'entry'     => $entry,
             'renderer'  => new \Contentful\RichText\Renderer(),
         ]);

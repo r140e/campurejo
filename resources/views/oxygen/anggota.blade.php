@@ -131,60 +131,39 @@
 						@foreach($nama_kelompok[$i] as $n)
 						<p>{{$n->nama}}</p>
 						@endforeach
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#k{{ $i }}">More</button>
+						<button type="button" class="btn btn-primary" href="#k{{ $i }}" uk-toggle>More</button>
 					</div>
 				</div>
 				@endfor
 			</div>
 		</div>
-	</div>
-
-	<div class="gtco-cover gtco-cover-sm" style="background-image:url(theme/oxygen/images/img_bg_3.jpg);">
-		<div class="overlay"></div>
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>...</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>	
 <!-- Modal -->					
 	@for($i=1; $i<=count($kelompok); $i++)
-	<div class="modal fade" id="k{{ $i }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Kelompok {{ $i }}</h4>
-			</div>
-			<div class="modal-body">
-			<div class="table-responsive">
-				<table class="table table-bordered">
-					<thead>
-					<tr>
-						<th>Nama</th>
-						<th>Nrp</th>
-					</tr>
-					</thead>
-					<tbody>
+	<div class="uk-modal-full" id="k{{ $i }}" uk-modal>
+		<div class="uk-modal-dialog">
+			<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+			<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+				<div class="uk-background-cover" style="background-image: url('/img/home.jpg');" uk-height-viewport></div>
+				<div class="uk-padding-large">
+					<h1>Kelompok {{ $i }}</h1>
+					<table class="uk-table uk-table-striped">
+						<thead>
+							<tr>
+								<th>Nama</th>
+								<th>NRP</th>
+							</tr>
+						</thead>
+						<tbody>
 						@foreach ($kelompok[$i] as $k)
-						<tr>
-							<td>{{ $k->nama }}</td>
-							<td>{{ $k->nrp }}</td>
-						</tr>
+							<tr>
+								<td>{{ $k->nama }}</td>
+								<td>{{ $k->nrp }}</td>
+							</tr>
 						@endforeach
-					</tbody>
-				</table>
-			</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>

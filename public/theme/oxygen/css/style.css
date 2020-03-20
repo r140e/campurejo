@@ -1398,4 +1398,15 @@ form label {
   min-height: 270px;
 }
 
+.uk-h1 {
+  font-size: 70px;
+}
+.uk-h2 {
+  font-size: 20px;
+}
+.uk-button-primary {
+  border-radius: 30px;
+}
+.a-video {filter: grayscale(1); transition: .5s ease-in}
+.a-video:hover {filter: grayscale(0)}
 /*# sourceMappingURL=style.css.map */
