@@ -18,10 +18,10 @@
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="{{ asset('/theme/oxygen/css/icomoon.css') }}">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="{{ asset('/theme/oxygen/css/bootstrap.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
 
 	<!-- Uikit  -->
-	<link rel="stylesheet" href="{{ asset('/css/uikit.min.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/css/uikit.min.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="{{ asset('/theme/oxygen/css/magnific-popup.css') }}">
 
@@ -33,7 +33,7 @@
 	<link rel="stylesheet" href="{{ asset('/theme/oxygen/css/style.css') }}">
 
 	<!-- Modernizr JS -->
-	<script src="{{ asset('/theme/oxygen/js/modernizr-2.6.2.min.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
 	@include('layouts.partials.nav2')
@@ -45,24 +45,24 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-    	<!-- jQuery -->
-	<script src="{{ asset('/theme/oxygen/js/jquery.min.js') }}"></script>
+    <!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="{{ asset('/theme/oxygen/js/jquery.easing.1.3.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js"></script>
 	<!-- Bootstrap -->
-	<script src="{{ asset('/theme/oxygen/js/bootstrap.min.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="{{ asset('/theme/oxygen/js/jquery.waypoints.min.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 	<!-- Carousel -->
 	<script src="{{ asset('/theme/oxygen/js/owl.carousel.min.js') }}"></script>
 	<!-- countTo -->
-	<script src="{{ asset('/theme/oxygen/js/jquery.countTo.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
 	<!-- Magnific Popup -->
-	<script src="{{ asset('/theme/oxygen/js/jquery.magnific-popup.min.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
 	<script src="{{ asset('/theme/oxygen/js/magnific-popup-options.js') }}"></script>
 	<!-- UIkit -->
-	<script src="{{ asset('/js/uikit.min.js') }}" type="text/javascript"></script>
-	<script src="{{ asset('/js/uikit-icons.min.js') }}" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit-icons.min.js" type="text/javascript"></script>
 	<!-- Main -->
 	<script src="{{ asset('/theme/oxygen/js/main.js') }}"></script>
 </body>

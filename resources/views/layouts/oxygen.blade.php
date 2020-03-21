@@ -9,8 +9,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
-	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="{{ asset('/theme/oxygen/css/animate.css') }}">
@@ -33,7 +31,7 @@
 	<link rel="stylesheet" href="{{ asset('/theme/oxygen/css/style.css') }}">
 
 	<!-- Modernizr JS -->
-	<script src="{{ asset('/theme/oxygen/js/modernizr-2.6.2.min.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
 	@include('layouts.partials.nav')
@@ -45,7 +43,7 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-    	<!-- jQuery -->
+    <!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js"></script>
@@ -56,9 +54,9 @@
 	<!-- Carousel -->
 	<script src="{{ asset('/theme/oxygen/js/owl.carousel.min.js') }}"></script>
 	<!-- countTo -->
-	<script src="{{ asset('/theme/oxygen/js/jquery.countTo.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
 	<!-- Magnific Popup -->
-	<script src="{{ asset('/theme/oxygen/js/jquery.magnific-popup.min.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
 	<script src="{{ asset('/theme/oxygen/js/magnific-popup-options.js') }}"></script>
 	<!-- UIkit -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit.min.js" type="text/javascript"></script>
