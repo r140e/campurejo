@@ -21,7 +21,7 @@
 					<div class="uk-card-badge uk-label">
 					@if( count($entry->categories) > 0 )
 						@foreach( $entry->categories as $cat )
-							{{ $cat->name }}
+							{{ $cat }}
 						@endforeach
 					@else
 						Uncategorized

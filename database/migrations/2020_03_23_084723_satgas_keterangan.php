@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Anggota extends Migration
+class SatgasKeterangan extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class Anggota extends Migration
      */
     public function up()
     {
-        Schema::create('anggota', function (Blueprint $table) {
+        Schema::create('satgas_keterangan', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('no');
-            $table->decimal('nrp', 15, 0);
+            $table->integer('satgas');
             $table->text('nama');
-            $table->integer('kelompok');
-            $table->text('hidro');
-            $table->text('kemah_kerja');
-            $table->integer('satgas')->nullable();
+            $table->text('tugas');
+            $table->text('icon');
         });
     }
 
@@ -32,6 +29,6 @@ class Anggota extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('anggota');
+        Schema::dropIfExists('satgas_keterangan');
     }
 }

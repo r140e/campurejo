@@ -22,3 +22,6 @@ body {
     max-height: 400px;
     overflow: auto;
 }
+#sidebar {
+    top: 90px;
+}

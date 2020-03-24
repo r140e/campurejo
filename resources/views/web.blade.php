@@ -14,6 +14,9 @@
   <script src="{{ asset('/js/leaflet/plugin/leaflet-ajax/dist/leaflet.ajax.js') }}"></script>
   <script src="{{ asset('/js/leaflet/plugin/leaflet-providers-master/leaflet-providers.js') }}"></script>
 
+  <link rel="stylesheet" href="{{ asset('/js/leaflet/plugin/sidebar-v2-master/css/leaflet-sidebar.css') }}"/>
+  <script src="{{ asset('/js/leaflet/plugin/sidebar-v2-master/js/leaflet-sidebar.js') }}"></script>  
+
   <link rel="stylesheet" href="{{ asset('/js/leaflet/plugin/leaflet.defaultextent-master/dist/leaflet.defaultextent.css') }}" />
   <script src="{{ asset('/js/leaflet/plugin/leaflet.defaultextent-master/dist/leaflet.defaultextent.js') }}"></script>              
 
@@ -26,32 +29,78 @@
   <link rel="stylesheet" href="{{ asset('/css/map.css') }}"/>
 </head>
 <body>
-  <div id="nav" class="uk-background-primary">
-  <nav class="uk-light" uk-navbar="mode: click">
-      <div class="uk-navbar-left">              
-          <a class="uk-navbar-item uk-logo" href="/"><img width="50" height="50" src="{{ asset('/img/its-putih.png') }}"/></a>
-          <a href="/">Campurejo</a>
-      </div>
-      <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav uk-visible@s">
-              <li><a href="#" uk-toggle="target: #inf0">Info</a></li>                            
-              <li><a href="#" uk-toggle="target: #inf2">Download</a></li>
-          </ul>                    
-          <a class="uk-navbar-toggle uk-hidden@s" href="#offcanvas-slide" uk-navbar-toggle-icon="" uk-toggle=""></a>
-          <div id="offcanvas-slide" uk-offcanvas="mode: slide; overlay: true; flip: true;">
-              <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" uk-close=""></button>
-                  <ul class="uk-nav uk-nav-default">
-                      <li><a href="#" uk-toggle="target: #inf0">Info</a></li>
-                      <li class="uk-nav-divider"></li>
-                      <li><a href="#" uk-toggle="target: #inf2">Download</a></li> 
-                  </ul>
-              </div>
-          </div>  
-      </div>
-  </nav>
-  </div>
+<div id="nav" class="uk-background-primary">
+<nav class="uk-light" uk-navbar="mode: click">
+    <div class="uk-navbar-left">              
+        <a class="uk-navbar-item uk-logo" href="/"><img width="50" height="50" src="{{ asset('/img/its-putih.png') }}"/></a>
+        <a href="/">Campurejo</a>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-visible@s">
+            <li><a href="#" uk-toggle="target: #inf0">Info</a></li>                            
+            <li><a href="#" uk-toggle="target: #inf2">Download</a></li>
+        </ul>                    
+        <a class="uk-navbar-toggle uk-hidden@s" href="#offcanvas-slide" uk-navbar-toggle-icon="" uk-toggle=""></a>
+        <div id="offcanvas-slide" uk-offcanvas="mode: slide; overlay: true; flip: true;">
+            <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" uk-close=""></button>
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="#" uk-toggle="target: #inf0">Info</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#" uk-toggle="target: #inf2">Download</a></li> 
+                </ul>
+            </div>
+        </div>  
+    </div>
+</nav>
+</div>
+<div id="sidebar" class="sidebar collapsed">
+    <!-- Nav tabs -->
+    <div class="sidebar-tabs">
+        <ul role="tablist">
+            <li><a href="#home" role="tab">Home</a></li>
+            <li><a href="#profile" role="tab">Home</a></li>
+            <li class="disabled"><a href="#messages" role="tab">Home</a></li>
+            <li><a href="https://github.com/Turbo87/sidebar-v2" role="tab" target="_blank">Home</i></a></li>
+        </ul>
 
-<div id="map">
+        <ul role="tablist">
+            <li><a href="#settings" role="tab">Setting</a></li>
+        </ul>
+    </div>
+
+    <!-- Tab panes -->
+    <div class="sidebar-content">
+        <div class="sidebar-pane" id="home">
+            <h1 class="sidebar-header">
+                sidebar-v2
+                <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+            </h1>
+
+            <p>A responsive sidebar for mapping libraries like <a href="http://leafletjs.com/">Leaflet</a> or <a href="http://openlayers.org/">OpenLayers</a>.</p>
+
+            <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+            <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+            <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+            <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="sidebar-pane" id="profile">
+            <h1 class="sidebar-header">Profile<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+        </div>
+
+        <div class="sidebar-pane" id="messages">
+            <h1 class="sidebar-header">Messages<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+        </div>
+
+        <div class="sidebar-pane" id="settings">
+            <h1 class="sidebar-header">Settings<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+        </div>
+    </div>
+</div>
+<div id="map" class="sidebar-map">
 <script>
 // MENGATUR TITIK KOORDINAT TITIK TENGAN & LEVEL ZOOM PADA BASEMAP
 var map = L.map('map', {
@@ -78,6 +127,8 @@ var baseLayers = {
 		minZoom: 12
   })
 };
+
+var sidebar = L.control.sidebar('sidebar').addTo(map);
 
 // MENAMPILKAN SKALA
 L.control.scale({imperial: false}).addTo(map);
@@ -129,15 +180,6 @@ var overlays = {
 var layerControl = L.control.groupedLayers(baseLayers, overlays, options2).addTo(map);
 map.addControl(layerControl);
 var featureGroup = L.featureGroup().addTo(map);
-var drawControl = new L.Control.Draw({
-edit: {
-  featureGroup: featureGroup
-}
-}).addTo(map);
-
-map.on('draw:created', function(e) {
-  featureGroup.addLayer(e.layer);
-});
 </script>
 <footer id="footer">
 <div class='uk-modal-full' id='inf0' uk-modal=''>
