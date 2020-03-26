@@ -10,7 +10,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="{{ asset('/theme/oxygen/css/animate.css') }}">
@@ -36,6 +36,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
+	<div class="gtco-loader"></div>
 	@include('layouts.partials.nav2')
         @yield('content')
 	@include('layouts.partials.sponsors')

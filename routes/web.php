@@ -18,10 +18,6 @@ Route::get('/web', function () {
     return view('web');
 });
 
-Route::get('/panitia', function () {
-    return view('oxygen/panitia');
-});
-
 Route::get('/about', function () {
     return view('oxygen/about');
 });

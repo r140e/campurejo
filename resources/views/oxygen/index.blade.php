@@ -15,7 +15,7 @@
     <div class='uk-card uk-child-width-1-5@s uk-grid uk-grid-collapse uk-flex-middle' uk-grid=''>
         <div class='uk-card-body uk-width-3-5@s'>
             <div class="uk-grid-margin uk-grid uk-grid-stack">
-                <div class="uk-width-1-1@m uk-first-column">                        
+                <div class="uk-width-1-1@m uk-first-column">
                 <h2 class='uk-heading-bullet'>Tentang</h2>
                 </div>
             </div>                

@@ -14,7 +14,7 @@
     <script src="{{ asset('/js/uikit.min.js') }}" type="text/javascript" defer></script>
 </head>
 <body>
-@include('layouts.components.navbar')
+@include('layouts.partials.navbar')
 
 <header class="bg-header uk-light uk-position-relative">
     <div id="particles-js"></div>
@@ -23,7 +23,7 @@
     </div>
 </header>
 
-@include('layouts.components.offcanvas')
+@include('layouts.partials.modalnav')
 
 <script src="{{ asset('/js/uikit-icons.min.js') }}" type="text/javascript" defer></script>
 <script src="{{ asset('/js/particles.js') }}" type="text/javascript" defer></script>
