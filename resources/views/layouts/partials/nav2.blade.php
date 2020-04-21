@@ -8,28 +8,7 @@
             <li><a href="/anggota">Anggota</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/web">Hasil</a></li>
-        </ul>
-        <ul class="uk-navbar-nav">
-            @guest
-            <li><a class="uk-navbar-item" href="{{ route('login') }}">{{ __('Login') }}</a></li> 
-            @else
-            <li><a href="#">{{ Auth::user()->name }}</a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li><a href='/home'>Dashboard</a></li>
-                        <li><a href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}</a>
-                        </li>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                        </form>
-                    </ul>
-                </div>
-            </li>
-            @endguest                  
-        </ul>                    
+        </ul>                  
         <a class="uk-navbar-toggle uk-hidden@s" href="#offcanvas-slide" uk-navbar-toggle-icon="" uk-toggle=""></a>
     </div>
 </nav>

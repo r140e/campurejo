@@ -31,12 +31,11 @@
     </div>
     </section>
 
-	<div id="gtco-features">
-		<div class="gtco-container">
-		<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading gtco-heading-sm">
-					<h2>Kegiatan</h2>
-				</div>
+	<section class="uk-section">
+		<div class="uk-container">
+			<div class="animate-box">
+				<h2 class="uk-text-center">Kegiatan</h2>
+				<hr class="uk-divider-small uk-text-center"/>
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-sm-4">
@@ -71,7 +70,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<section class="uk-section uk-section-xsmall uk-background-cover" style="background-image:url(theme/oxygen/images/img_bg_2.jpg);">	
 	<div class="uk-container">
@@ -125,9 +124,10 @@
 
 	<section class="uk-section uk-section-muted uk-dark">
     <div class="uk-container">
-    <h2 class="uk-text-center">Blog</h2>
-    <hr class="uk-divider-small uk-text-center"/>
-
+		<div class="animate-box">
+			<h2 class="uk-text-center">Blog</h2>
+    		<hr class="uk-divider-small uk-text-center"/>
+		</div>    
 		<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
 		@if( count($entries) > 0 )
 		@php $index = 0; @endphp
