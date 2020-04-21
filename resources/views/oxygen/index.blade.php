@@ -1,7 +1,7 @@
 @extends('layouts.oxygen')
 
 @section('content')
-	<header class="uk-section-xlarge uk-light uk-background-cover" style="background-image:url(theme/oxygen/images/img_bg_1.jfif);">
+	<header class="uk-section-xlarge uk-light uk-background-cover" style="background-image:url(theme/oxygen/images/img_bg_1.jpg);">
 	<div class="uk-container">
 		<div class="uk-card uk-text-center animate-box" data-animate-effect="fadeIn">
 			<h1 class="uk-h1">Field Camp & Hidro</h1>
