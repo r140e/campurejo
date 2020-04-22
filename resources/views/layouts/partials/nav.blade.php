@@ -5,6 +5,7 @@
     <div class="uk-navbar-right">
         <ul class="uk-navbar-nav uk-visible@s">
             <li><a href="/anggota">Anggota</a></li>
+            <li><a href="/kak">KAK</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/web">Hasil</a></li>
         </ul>                   

@@ -43,8 +43,28 @@
 						<span class="icon">
 							<i class="icon-triangle-down"></i>
 						</span>
-						<h3>Survey Terestris</h3>
-						<p>Pengukuran dilakukan untuk mendapatkan bentuk topologi area studi kasus didarat menggunakan Waterpass, Total Station, GPS</p>
+						<h3>Survey GNSS</h3>
+						<p>survey meliputi pengukuran gps untuk titik kontrol pemetaan</p>
+						<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-aircraft"></i>
+						</span>
+						<h3>Fotogrametri</h3>
+						<p>Pengukuran dilakukan menggunakan wahana terbang yaitu drone untuk memetakan areanya tanpa kontak dengan area secara fisik</p>
+						<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-earth"></i>
+						</span>
+						<h3>Topografi</h3>
+						<p>Pengukuran untuk mendapatkan detil topografi menggunakan total station</p>
 						<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
 					</div>
 				</div>
@@ -63,8 +83,8 @@
 						<span class="icon">
 							<i class="icon-aircraft"></i>
 						</span>
-						<h3>Survey Eks Terestrial</h3>
-						<p>Pengukuran dilakukan menggunakan wahana terbang yaitu drone untuk memetakan areanya tanpa kontak dengan area secara fisik</p>
+						<h3>Profil dan Toponimi Desa</h3>
+						<p>kegiatan untuk mendapatkan data profil desa dan data toponimi di lokasi sesuai gasetir big</p>
 						<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
 					</div>
 				</div>
