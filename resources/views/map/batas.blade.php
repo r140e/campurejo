@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Desa Campurejo</title>
+  <title>Batas Desa</title>
   <link rel="stylesheet" href="{{ asset('/css/uikit.min.css') }}"/>
   <script src="{{ asset('/js/uikit.min.js') }}" type="text/javascript"></script>
   <script src="{{ asset('/js/uikit-icons.min.js') }}" type="text/javascript"></script>   
@@ -54,24 +54,23 @@
 
         </div>
         </div>
-        <a href="/">Campurejo</a>
+        <a href="/">Batas Desa</a>
     </div>
     <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
             <li><a href="#" uk-toggle="target: #inf0">Info</a></li>                            
-            <li><a href="#" uk-toggle="target: #inf2">Download</a></li>
+            <li class="uk-visible@s"><a href="#" uk-toggle="target: #inf2">Download</a></li>
         </ul>                              
     </div>
 </nav>
 </div>
 <div id="map">
-<script>
-// MENGATUR TITIK KOORDINAT TITIK TENGAN & LEVEL ZOOM PADA BASEMAP
-var map = L.map('map', {
-  center: [-6.888936,112.457681], zoom: 14})
-// PILIHAN BASEMAP YANG AKAN DITAMPILKAN
+<script type="text/javascript">
+</script>
+<script type="text/javascript">
+var map = L.map('map', {center: [-6.888936,112.457681], zoom: 14})
+
 var baseLayers = {
-  // add Stamen Watercolor to map.
   'MapBox' : L.tileLayer.provider('MapBox', {
       id: 'mapbox.satellite',
       accessToken: 'pk.eyJ1IjoidTIxMzZuIiwiYSI6ImNrM2lnMWJ3MDA3eGozYmxtcHdndDQxd2IifQ.pjhud5_6ZXDFQJxHVDGlLA',      
@@ -91,45 +90,48 @@ var baseLayers = {
 		minZoom: 12
   })
 };
-// MENAMPILKAN SKALA
-L.control.scale({imperial: false}).addTo(map);
-L.control.mousePosition({
-  position:"bottomleft"
-}).addTo(map);
 
-// ------------------- VECTOR ----------------------------
-var layer_BATASADMINISTRASI = new L.GeoJSON.AJAX("{{ asset('/layer/BatasAdministrasi.json') }}",{ // layer geologi berada di dalam variabel layer_geologi
+L.control.scale({imperial: false}).addTo(map);
+L.control.mousePosition().addTo(map);
+
+var layer_BATASADMINISTRASI = new L.GeoJSON.AJAX("{{ asset('/layer/BatasAdministrasi.json') }}",{
   style: function(feature){
-  var fillColor = "#c1faa1";  // no data
-    return { color: "#eaeaea", dashArray: '3', fillColor: fillColor, fillOpacity: .8 }; // style border sertaa transparansi
+  var fillColor,
+      desa = feature.properties.NAMOBJ;
+      if ( desa == "PALOH" ) fillColor = "#f6e58d";
+      else if ( desa == 'WERU' ) fillColor = "#ffbe76";
+      else if ( desa == 'SIDOKUMPUL' ) fillColor = "#ff7979";
+      else if ( desa == 'WARU LOR' ) fillColor = "#badc58";
+      else if ( desa == 'CAMPURREJO' ) fillColor = "#e056fd";
+      else fillColor = "#7ed6df";
+    return { color: "#eaeaea", dashArray: '3', fillColor: fillColor, fillOpacity: .8 };
   },
   onEachFeature: function(feature, layer){
         layer.bindPopup(
-        `<p><b>Desa</b></p>` + feature.properties.NAMOBJ
+        `<p>Desa : ` + feature.properties.NAMOBJ + `</p>` +
+        `<p>Kecamatan : ` + feature.properties.WADMKC + `</p>` + 
+        `<p>Kabupaten : ` + feature.properties.WADMKK + `</p>` +
+        `<p>Provinsi : ` + feature.properties.WADMPR + `</p>`  
         ),
-      that = this; // perintah agar menghasilkan efek hover pada objek layer
-
+        that = this;
             layer.on('mouseover', function (e) {
                 this.setStyle({
-                weight: .5,
+                weight: 5,
                 color: '#888',
                 dashArray: '',
-                fillOpacity: 0.5
+                fillOpacity: 0.7
                 });
-
             if (!L.Browser.ie && !L.Browser.opera) {
                 layer.bringToFront();
             }
-
                 info.update(layer.feature.properties);
             });
             layer.on('mouseout', function (e) {
-                layer_BATASADMINISTRASI.resetStyle(e.target); // isi dengan nama variabel dari layer
+                layer_BATASADMINISTRASI.resetStyle(e.target);
                 info.update();
             });
     }
-}).addTo(map);        
-// membuat pilihan untuk menampilkan layer
+}).addTo(map);  
 var overlays = {
       "Area": {
         "Batas": layer_BATASADMINISTRASI,
@@ -141,6 +143,30 @@ var overlays = {
 var layerControl = L.control.groupedLayers(baseLayers, overlays, options2).addTo(map);
 map.addControl(layerControl);
 var featureGroup = L.featureGroup().addTo(map);
+
+function getColor(d) {
+		return d == 'PALOH' ? '#f6e58d' :
+			d == 'WERU' ? '#ffbe76':
+      d == 'SIDOKUMPUL' ? '#ff7979':
+      d == 'WARU LOR' ? '#badc58':
+      d == 'CAMPURREJO' ? '#e056fd':
+                        '#7ed6df';
+	}
+var legend = L.control({position: 'bottomright'});
+  legend.onAdd = function (map) {
+      var div = L.DomUtil.create('div', 'info legend'),      
+          grades = ['CAMPURREJO', 'PALOH', 'WERU', 'SIDOKUMPUL', 'WARU LOR'],
+          labels = [];
+      // loop through our density intervals and generate a label with a colored square for each interval
+      for (var i = 0; i < grades.length; i++) {
+          div.innerHTML +=
+              '<i style="background:' + getColor(grades[i]) + '"></i> ' +
+              grades[i] + '<br>';
+      }
+
+      return div;
+};
+legend.addTo(map);
 </script>
 <footer id="footer">
 <div class='uk-modal-full' id='inf0' uk-modal=''>
