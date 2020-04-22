@@ -31,6 +31,7 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="{{ asset('/theme/oxygen/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('/css/style.css') }}">
 
 	<!-- Modernizr JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>

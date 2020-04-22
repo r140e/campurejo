@@ -10,3 +10,24 @@
 .aa_title{background:#fff;padding:.5rem;}
 .aa_hh{color:#fff;background:#654791;padding:2rem;}
 .aa_desc{color:#fff;font-size:16px;text-transform:none;}
+
+.uk-card .icon {
+    width: 90px;
+    height: 90px;
+    background: #efefef;
+    display: table;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.uk-card .icon i {
+    display: table-cell;
+    vertical-align: middle;
+    height: 90px;
+    font-size: 40px;
+    line-height: 40px;
+    color: #52d3aa;
+}

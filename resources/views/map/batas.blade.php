@@ -160,7 +160,7 @@ var legend = L.control({position: 'bottomright'});
       // loop through our density intervals and generate a label with a colored square for each interval
       for (var i = 0; i < grades.length; i++) {
           div.innerHTML +=
-              '<span style="background:' + getColor(grades[i]) + '"></span> ' +
+              '<i style="background:' + getColor(grades[i]) + '"></i> ' +
               grades[i] + '<br>';
       }
 
@@ -177,7 +177,7 @@ legend.addTo(map);
     <div class="uk-padding-large">
       <h1>Tentang</h1>
       <p>Data berasal dari inageoportal</p>
-      <p>### Data layer dibuat statis di production ###</p>
+      <p>Layer dibuat statis</p>
       <div class='uk-flex uk-flex-center uk-flex-left@s'>
           <a href='#' class='uk-button uk-button-danger uk-margin-right'>More</a>
           <a class='uk-button uk-button-default'>r140e</a>

@@ -14,7 +14,7 @@
 
 Route::get('/', 'IndexController@index');
 
-Route::get('/batas', function () {
+Route::get('/web', function () {
     return view('map/batas');
 });
 

@@ -32,62 +32,56 @@
     </section>
 
 	<section class="uk-section">
-		<div class="uk-container">
-			<div class="animate-box">
-				<h2 class="uk-text-center">Kegiatan</h2>
-				<hr class="uk-divider-small uk-text-center"/>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="icon-triangle-down"></i>
-						</span>
-						<h3>Survey GNSS</h3>
-						<p>survey meliputi pengukuran gps untuk titik kontrol pemetaan</p>
-						<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
-					</div>
+		<div class="uk-container uk-text-center">
+			<div class="animate-box" data-animate-effect="fadeIn">
+				<h2>Kegiatan</h2>			
+				<hr class="uk-divider-small"/>
+			</div>			
+			<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-flex-center" uk-grid>
+				<div class="uk-card animate-box" data-animate-effect="fadeIn">
+					<span class="icon">
+						<i class="icon-triangle-down"></i>
+					</span>
+					<h3>Survey GNSS</h3>
+					<p>survey meliputi pengukuran gps untuk titik kontrol pemetaan</p>
+					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="icon-aircraft"></i>
-						</span>
-						<h3>Fotogrametri</h3>
-						<p>Pengukuran dilakukan menggunakan wahana terbang yaitu drone untuk memetakan areanya tanpa kontak dengan area secara fisik</p>
-						<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
-					</div>
+
+				<div class="uk-card animate-box" data-animate-effect="fadeIn">
+					<span class="icon">
+						<i class="icon-aircraft"></i>
+					</span>
+					<h3>Fotogrametri</h3>
+					<p>Pengukuran dilakukan menggunakan wahana terbang yaitu drone untuk memetakan areanya tanpa kontak dengan area secara fisik</p>
+					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="icon-earth"></i>
-						</span>
-						<h3>Topografi</h3>
-						<p>Pengukuran untuk mendapatkan detil topografi menggunakan total station</p>
-						<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
-					</div>
+
+				<div class="uk-card animate-box" data-animate-effect="fadeIn">
+					<span class="icon">
+						<i class="icon-earth"></i>
+					</span>
+					<h3>Topografi</h3>
+					<p>Pengukuran untuk mendapatkan detil topografi menggunakan total station</p>
+					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="icon-anchor"></i>
-						</span>
-						<h3>Survey Hidrografi</h3>
-						<p>Pengukuran ini dilakukan untuk mendapatkan bentuk geografis dari permukaan bawah laut yang sejajar dengan garis pantai</p>
-						<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
-					</div>
+
+				<div class="uk-card animate-box" data-animate-effect="fadeIn">
+					<span class="icon">
+						<i class="icon-anchor"></i>
+					</span>
+					<h3>Survey Hidrografi</h3>
+					<p>Pengukuran ini dilakukan untuk mendapatkan bentuk geografis dari permukaan bawah laut yang sejajar dengan garis pantai</p>
+					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="icon-aircraft"></i>
-						</span>
-						<h3>Profil dan Toponimi Desa</h3>
-						<p>kegiatan untuk mendapatkan data profil desa dan data toponimi di lokasi sesuai gasetir big</p>
-						<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
-					</div>
-				</div>
+
+				<div class="uk-card animate-box" data-animate-effect="fadeIn">
+					<span class="icon">
+						<i class="icon-aircraft"></i>
+					</span>
+					<h3>Profil dan Toponimi Desa</h3>
+					<p>kegiatan untuk mendapatkan data profil desa dan data toponimi di lokasi sesuai gasetir big</p>
+					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
+				</div>												
 			</div>
 		</div>
 	</section>
@@ -152,7 +146,7 @@
 		@if( count($entries) > 0 )
 		@php $index = 0; @endphp
 		@foreach($entries as $entry) 
-		<div>
+		<div class="uk-card">
 			<div class="uk-card uk-card-default animate-box" data-animate-effect="fadeIn">
 				<div class="uk-card-media-top">
 					<img src="{{ $entry->featuredImage->getFile()->getUrl() }}" alt="{{ $entry->title }}">
