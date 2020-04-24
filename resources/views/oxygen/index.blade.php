@@ -13,7 +13,7 @@
 	<section class="uk-section uk-section-muted">
     <div class="uk-container">
     <div class='uk-card uk-child-width-1-5@s uk-grid uk-grid-collapse uk-flex-middle' uk-grid=''>
-        <div class='uk-card-body uk-width-3-5@s'>
+        <div class='uk-card-body uk-width-3-5@s' uk-scrollspy="cls: uk-animation-slide-left;">
             <div class="uk-grid-margin uk-grid uk-grid-stack">
                 <div class="uk-width-1-1@m uk-first-column">
                 <h2 class='uk-heading-bullet'>Tentang</h2>
@@ -22,7 +22,7 @@
 			<p>Campurejo adalah sebuah desa di Kecamatan Panceng, Kabupaten Gresik, provinsi Jawa Timur. Campurejo merupakan desa yang berbatasan langsung dengan Kabupaten Lamongan, bentuk geografis Campurejo seperti pistol yang mana pada bagian visornya terdapat 4 desa yaitu Paloh, Weru, Sidokumpul, Waru Lor</p>
 			<p>Campurejo dipilih menjadi tempat studi kasus untuk melaksanakan kegiatan kemah kerja dan hidrografi oleh Teknik Geomatika ITS angkatan 2017</p>
         </div>
-        <div class='uk-flex-last@s uk-card-media-left uk-cover-container uk-width-2-5@s'>
+        <div class='uk-flex-last@s uk-card-media-left uk-cover-container uk-width-2-5@s' uk-scrollspy="cls: uk-animation-slide-right;">
 			<div class="gtco-video gtco-bg" style="background-image: url(img/terasering.jpg); ">
 				<a href="https://www.youtube.com/watch?v=oWnwhCDzv7E" class="popup-youtube"><i class="icon-video2"></i></a>
 				<div class="overlay"></div>
@@ -33,12 +33,10 @@
 
 	<section class="uk-section">
 		<div class="uk-container uk-text-center">
-			<div class="animate-box" data-animate-effect="fadeIn">
-				<h2>Kegiatan</h2>			
-				<hr class="uk-divider-small"/>
-			</div>			
-			<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-flex-center" uk-grid>
-				<div class="uk-card animate-box" data-animate-effect="fadeIn">
+			<h2>Kegiatan</h2>			
+			<hr class="uk-divider-small"/>
+			<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-flex-center" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300;" uk-grid>
+				<div class="uk-card" uk-scrollspy-class="uk-animation-slide-top">
 					<span class="icon">
 						<i class="icon-triangle-down"></i>
 					</span>
@@ -47,7 +45,7 @@
 					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
 
-				<div class="uk-card animate-box" data-animate-effect="fadeIn">
+				<div class="uk-card">
 					<span class="icon">
 						<i class="icon-aircraft"></i>
 					</span>
@@ -56,7 +54,7 @@
 					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
 
-				<div class="uk-card animate-box" data-animate-effect="fadeIn">
+				<div class="uk-card" uk-scrollspy-class="uk-animation-slide-top">
 					<span class="icon">
 						<i class="icon-earth"></i>
 					</span>
@@ -65,7 +63,7 @@
 					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
 
-				<div class="uk-card animate-box" data-animate-effect="fadeIn">
+				<div class="uk-card">
 					<span class="icon">
 						<i class="icon-anchor"></i>
 					</span>
@@ -74,7 +72,7 @@
 					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
 
-				<div class="uk-card animate-box" data-animate-effect="fadeIn">
+				<div class="uk-card">
 					<span class="icon">
 						<i class="icon-aircraft"></i>
 					</span>
@@ -138,16 +136,14 @@
 
 	<section class="uk-section uk-section-muted uk-dark">
     <div class="uk-container">
-		<div class="animate-box">
-			<h2 class="uk-text-center">Blog</h2>
-    		<hr class="uk-divider-small uk-text-center"/>
-		</div>    
-		<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+		<h2 class="uk-text-center">Blog</h2>
+		<hr class="uk-divider-small uk-text-center"/>
+		<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300" uk-grid="masonry: true">
 		@if( count($entries) > 0 )
 		@php $index = 0; @endphp
 		@foreach($entries as $entry) 
 		<div class="uk-card">
-			<div class="uk-card uk-card-default animate-box" data-animate-effect="fadeIn">
+			<div class="uk-card uk-card-default">
 				<div class="uk-card-media-top">
 					<img src="{{ $entry->featuredImage->getFile()->getUrl() }}" alt="{{ $entry->title }}">
 					<div class="uk-card-badge uk-label">

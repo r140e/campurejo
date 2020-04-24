@@ -4,18 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Batas Desa</title>
-  <link rel="stylesheet" href="{{ asset('/css/uikit.min.css') }}"/>
-  <script src="{{ asset('/js/uikit.min.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('/js/uikit-icons.min.js') }}" type="text/javascript"></script>   
+  <link rel="stylesheet" href="{{ asset('/css/uikit.min.css') }}"/> 
 
   <link rel="stylesheet" href="{{ asset('/js/leaflet/leaflet.css') }}"/>
   <script src="{{ asset('/js/leaflet/leaflet.js') }}"></script>
 
   <script src="{{ asset('/js/leaflet/plugin/leaflet-ajax/dist/leaflet.ajax.js') }}"></script>
   <script src="{{ asset('/js/leaflet/plugin/leaflet-providers-master/leaflet-providers.js') }}"></script>
-
-  <link rel="stylesheet" href="{{ asset('/js/leaflet/plugin/sidebar-v2-master/css/leaflet-sidebar.css') }}"/>
-  <script src="{{ asset('/js/leaflet/plugin/sidebar-v2-master/js/leaflet-sidebar.js') }}"></script>  
 
   <link rel="stylesheet" href="{{ asset('/js/leaflet/plugin/leaflet.defaultextent-master/dist/leaflet.defaultextent.css') }}" />
   <script src="{{ asset('/js/leaflet/plugin/leaflet.defaultextent-master/dist/leaflet.defaultextent.js') }}"></script>              
@@ -64,9 +59,7 @@
     </div>
 </nav>
 </div>
-<div id="map">
-<script type="text/javascript">
-</script>
+<div id="map"></div>
 <script type="text/javascript">
 var map = L.map('map', {center: [-6.888936,112.457681], zoom: 14})
 
@@ -217,5 +210,6 @@ legend.addTo(map);
 </div>
 </div>
 </footer>
+<script src="{{ asset('/js/uikit.min.js') }}" type="text/javascript"></script>  
 </body>
 </html>

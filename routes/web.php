@@ -28,6 +28,7 @@ Route::get('/contact', function () {
 
 Route::get('/blog', 'BlogPostController@index');
 Route::get('/blog/{slug}', 'BlogPostController@show');
+Route::get('/kelompok/{slug}', 'KelompokController@show');
 Route::get('/kak', 'StaticController@kak');
 
 Route::get('/anggota', 'AnggotaController@index');
