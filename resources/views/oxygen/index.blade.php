@@ -42,7 +42,7 @@
 					</span>
 					<h3>Survey GNSS</h3>
 					<p>survey meliputi pengukuran gps untuk titik kontrol pemetaan</p>
-					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
+					<p><a href="/gnss" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
 
 				<div class="uk-card">
@@ -51,7 +51,7 @@
 					</span>
 					<h3>Fotogrametri</h3>
 					<p>Pengukuran dilakukan menggunakan wahana terbang yaitu drone untuk memetakan areanya tanpa kontak dengan area secara fisik</p>
-					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
+					<p><a href="/fotogrametri" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
 
 				<div class="uk-card" uk-scrollspy-class="uk-animation-slide-top">
@@ -60,7 +60,7 @@
 					</span>
 					<h3>Topografi</h3>
 					<p>Pengukuran untuk mendapatkan detil topografi menggunakan total station</p>
-					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
+					<p><a href="/topografi" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
 
 				<div class="uk-card">
@@ -69,7 +69,7 @@
 					</span>
 					<h3>Survey Hidrografi</h3>
 					<p>Pengukuran ini dilakukan untuk mendapatkan bentuk geografis dari permukaan bawah laut yang sejajar dengan garis pantai</p>
-					<p><a href="#" class="btn btn-primary">Selengkapnya</a></p>
+					<p><a href="/hidrografi" class="btn btn-primary">Selengkapnya</a></p>
 				</div>
 
 				<div class="uk-card">

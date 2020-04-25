@@ -1,4 +1,4 @@
-<div class="uk-background-primary">
+<div class="uk-background-primary" uk-sticky="sel-target: .uk-navbar; cls-active: uk-navbar-sticky">
 <nav class="uk-navbar uk-container uk-light" uk-navbar="mode: click">
     <div class="uk-navbar-left">
         <a class="uk-navbar-item uk-logo" href="{{ url('/') }}"><img width="50" height="50" src="{{ asset('/img/its-putih.png') }}"/></a>

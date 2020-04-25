@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Ngoro') }}</title>
+    <title>{{ config('app.name', 'Campurejo') }}</title>
     <!-- Styles -->
     <link href="{{ asset('/css/uikit.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/style.css') }}" rel="stylesheet">

@@ -22,7 +22,15 @@ class KelompokController extends Controller
         $this->CQUERY = $query;
         $this->renderer = new \Contentful\RichText\Renderer();
     }
+    public function index()
+    {
+        $entries = $this->CQUERY->getEntriesByContentType('kelompok');
 
+        return view('kelompok.kelompok', [
+            'entries'       => $entries,
+            'renderer'      => $this->renderer,
+        ]);
+    }
     public function show($slug)
     {
         $entries = $this->CQUERY->getEntriesByContentType('kelompok');
@@ -32,7 +40,7 @@ class KelompokController extends Controller
             abort(404);
         }
 
-        return view('oxygen.kelompokdetail', [
+        return view('kelompok.kelompokdetail', [
             'entries'   => $entries,
             'entry'     => $entry,
             'renderer'  => new \Contentful\RichText\Renderer(),

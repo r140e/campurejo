@@ -1,31 +1,29 @@
 @extends('layouts.oxygen3')
 
 @section('content')
-	<header class="uk-section-large uk-light uk-background-secondary">
-	<div class="uk-container">
-		<div class="uk-card uk-text-center animate-box" data-animate-effect="fadeIn">
-			<p class="uk-h1">Kelompok {{ $entry->slug }}</p>
-			<h2 class="uk-h1">({{ $entry->nama }})</h2>
-		</div>
+	<div class="uk-visible@m uk-section uk-light uk-background-secondary uk-height-medium uk-position-top uk-width-1-1">
 	</div>
-	</header>
-	<section class="uk-section uk-section-muted uk-margin">
+	<section class="uk-section uk-margin">
 		<div class="uk-container uk-margin">
 			<div class="uk-child-width-1-3@s" uk-grid>
 				<div class="uk-width-expand@m" uk-grid>
 					<div class="uk-card uk-width-medium@s uk-width-1-2">
 						<div class="uk-card-media-top">
-							<img src="{{ $entry->logo->getFile()->getUrl() }}?w=300&" alt=""/>
+							<img src="{{ $entry->logo->getFile()->getUrl() }}?fit=crop&w=300&h=300" alt=""/>
 						</div>
 						<div class="uk-card-body uk-padding-remove-horizontal">
 							{{ $entry->deskripsiNamaKelompok }}
 						</div>
 					</div>
-					<div class="uk-width-expand">
+					<div class="uk-width-expand uk-card">
+						<div class="uk-height-max-small">
+							<h3 class="inverse-color">Kelompok {{ $entry->slug }}</h3>
+							<h2 class="inverse-color">{{ $entry->nama }}</h2>
+						</div>
 						<h4>Pengerjaan</h4>
 						<p>{{ $entry->deskripsiKelompok }}</p>
 						@foreach ($entry->alat as $a)
-							<button class="uk-button uk-button-small uk-button-default">{{ $a }}</button>
+						<button class="uk-button uk-button-small uk-button-default">{{ $a }}</button>
 						@endforeach
 					</div>
 				</div>
@@ -70,7 +68,7 @@
 		<div class="uk-container uk-margin">
 			<h2>Dokumentasi</h2>
 			<hr class="uk-divider-small">
-			<div class="uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-collapse uk-flex-center uk-margin" uk-grid="masonry: true;">
+			<div class="uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-collapse uk-margin" uk-grid="masonry: true;">
 				@foreach ($entry->dokumentasi as $d)
 					<div uk-lightbox>
 						<a href="{{ $d->getFile()->getUrl() }}"><img src="{{ $d->getFile()->getUrl() }}"/></a>
@@ -86,7 +84,7 @@
 			@php $index = 0; @endphp
 			@foreach($entries as $entry)
 			<div>
-				<div class="uk-card uk-card-body uk-card-primary uk-flex uk-flex-center uk-flex-middle uk-text-center">
+				<div class="uk-card uk-card-body uk-card-primary uk-text-center">
 					<h3 class="uk-card-title"><a href="/kelompok/{{ $entry->slug }}">Kelompok {{ $entry->slug }}</a></h3>
 				</div>
 			</div>

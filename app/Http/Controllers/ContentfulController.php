@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Helpers\ContentfulQuery as CQuery;
 
-class BlogPostController extends Controller
+class ContentfulController extends Controller
 {
     /**
      * @var CQuery
@@ -27,13 +27,23 @@ class BlogPostController extends Controller
     {
         $entries = $this->CQUERY->getEntriesByContentType('blogPost');
 
-        return view('oxygen.blog', [
+        return view('oxygen.index', [
             'entries'       => $entries,
             'renderer'      => $this->renderer,
         ]);
     }
 
-    public function show($slug)
+    public function blog()
+    {
+        $entries = $this->CQUERY->getEntriesByContentType('blogPost');
+
+        return view('blog.blog', [
+            'entries'       => $entries,
+            'renderer'      => $this->renderer,
+        ]);
+    }
+
+    public function post($slug)
     {
         $entry = $this->CQUERY->getEntry('blogPost', $slug);
 
@@ -41,7 +51,7 @@ class BlogPostController extends Controller
             abort(404);
         }
 
-        return view('oxygen.post', [
+        return view('blog.post', [
             'entry'     => $entry,
             'renderer'  => new \Contentful\RichText\Renderer(),
         ]);

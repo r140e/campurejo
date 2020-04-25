@@ -73,4 +73,19 @@ class ContentfulQuery
             return null;
         }
     }
+
+    public function getKegiatan($kategori, $limit = -1)
+    {
+        $query = new \Contentful\Delivery\Query();
+        $query->setContentType('kegiatan')
+            ->where('fields.kategori', $kategori)
+            ->orderBy('sys.createdAt')
+            ->setInclude(2);
+
+        if ($limit > 0) {
+            $query->setLimit($limit);
+        }
+
+        return $this->client->getEntries($query);
+    }
 }

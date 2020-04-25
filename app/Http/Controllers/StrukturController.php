@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 use App\Anggota;
 
-class AnggotaController extends Controller
+class StrukturController extends Controller
 {
 
     public function index()

@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/', 'IndexController@index');
+Route::get('/', 'ContentfulController@index');
 
 Route::get('/web', function () {
     return view('map/batas');
@@ -26,12 +26,13 @@ Route::get('/contact', function () {
     return view('oxygen/contact');
 });
 
-Route::get('/blog', 'BlogPostController@index');
-Route::get('/blog/{slug}', 'BlogPostController@show');
+Route::get('/struktur', 'StrukturController@index');
+Route::get('/blog', 'ContentfulController@blog');
+Route::get('/blog/{slug}', 'ContentfulController@post');
+Route::get('/kelompok', 'KelompokController@index');
 Route::get('/kelompok/{slug}', 'KelompokController@show');
 Route::get('/kak', 'StaticController@kak');
-
-Route::get('/anggota', 'AnggotaController@index');
+Route::get('/hidrografi', 'KegiatanController@hidrografi');
 
 Auth::routes([
 'reset' => false, // Password Reset Routes...
