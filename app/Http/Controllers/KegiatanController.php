@@ -22,6 +22,10 @@ class KegiatanController extends Controller
         $this->CQUERY = $query;
         $this->renderer = new \Contentful\RichText\Renderer();
     }
+    public function index()
+    {
+        return view('kegiatan.index');
+    }
 
     public function hidrografi()
     {

@@ -32,8 +32,10 @@ Route::get('/blog/{slug}', 'ContentfulController@post');
 Route::get('/kelompok', 'KelompokController@index');
 Route::get('/kelompok/{slug}', 'KelompokController@show');
 Route::get('/kak', 'StaticController@kak');
+Route::get('/kegiatan', 'KegiatanController@index');
 Route::get('/hidrografi', 'KegiatanController@hidrografi');
 
+Route::get('/gallery', 'ContentfulController@gallery');
 Auth::routes([
 'reset' => false, // Password Reset Routes...
 'verify' => false, // Email Verification Routes...

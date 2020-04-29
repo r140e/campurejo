@@ -79,7 +79,7 @@ class ContentfulQuery
         $query = new \Contentful\Delivery\Query();
         $query->setContentType('kegiatan')
             ->where('fields.kategori', $kategori)
-            ->orderBy('sys.createdAt')
+            ->orderBy('fields.urutanKegiatan')
             ->setInclude(2);
 
         if ($limit > 0) {

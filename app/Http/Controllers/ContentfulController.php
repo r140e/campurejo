@@ -56,4 +56,13 @@ class ContentfulController extends Controller
             'renderer'  => new \Contentful\RichText\Renderer(),
         ]);
     }
+    
+    public function gallery()
+    {
+        $gallery = $this->CQUERY->getEntriesByContentType('gallery');
+
+        return view('oxygen.gallery', [
+            'gallery' => $gallery,
+        ]);
+    }
 }
