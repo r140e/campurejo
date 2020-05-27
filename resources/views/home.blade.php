@@ -1,18 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-<div class='uk-container uk-container-xsmall'>
-    <div class='uk-card'> 
-        <div class="uk-card-header">
-            <p class="uk-card-title">Dashboard</p>
-        </div>
-        <div class="uk-card-body">
-            @if (session('status'))
-            <div class="" role="alert">
-                {{ session('status') }}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
+                </div>
             </div>
-            @endif
-            <span>Tambahkan data <a href="/toponimi">toponimi</a></span>
         </div>
     </div>
 </div>

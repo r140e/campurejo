@@ -27,19 +27,27 @@ Route::get('/contact', function () {
 });
 
 Route::get('/struktur', 'StrukturController@index');
+
 Route::get('/blog', 'ContentfulController@blog');
 Route::get('/blog/{slug}', 'ContentfulController@post');
+
 Route::get('/kelompok', 'KelompokController@index');
 Route::get('/kelompok/{slug}', 'KelompokController@show');
+
 Route::get('/kak', 'StaticController@kak');
+
 Route::get('/kegiatan', 'KegiatanController@index');
 Route::get('/hidrografi', 'KegiatanController@hidrografi');
+Route::get('/gnss', 'KegiatanController@gnss');
+Route::get('/fotogrametri', 'KegiatanController@fotogrametri');
+Route::get('/topografi', 'KegiatanController@topografi');
 
 Route::get('/gallery', 'ContentfulController@gallery');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Auth::routes([
-'reset' => false, // Password Reset Routes...
-'verify' => false, // Email Verification Routes...
-]
-);
+    'register' => false,
+]);
 
 Route::get('/home', 'HomeController@index')->name('home');

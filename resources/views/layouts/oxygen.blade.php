@@ -38,8 +38,12 @@
 </head>
 <body>
 	<div class="gtco-loader"></div>
-	@include('layouts.partials.nav')
-        @yield('content')
+	@component('layouts.partials.nav')
+        @slot('navbarModel')
+			uk-navbar-transparent uk-position-top uk-position-z-index
+        @endslot
+    @endcomponent
+    @yield('content')
 	@include('layouts.partials.sponsors')
 	@include('layouts.partials.footer')
 	@include('layouts.partials.modalnav')

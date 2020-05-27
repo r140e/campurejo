@@ -88,4 +88,18 @@ class ContentfulQuery
 
         return $this->client->getEntries($query);
     }
+
+    public function getHasil($tags, $limit = -1)
+    {
+        $query = new \Contentful\Delivery\Query();
+        $query->setContentType('hasil')
+            ->where('fields.tags', $tags)
+            ->setInclude(2);
+
+        if ($limit > 0) {
+            $query->setLimit($limit);
+        }
+
+        return $this->client->getEntries($query);
+    }
 }

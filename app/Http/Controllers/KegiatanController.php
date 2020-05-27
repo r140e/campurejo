@@ -29,37 +29,45 @@ class KegiatanController extends Controller
 
     public function hidrografi()
     {
-        $s1 = $this->CQUERY->getKegiatan('hidrografi');
+        $kegiatan = $this->CQUERY->getKegiatan('hidrografi');
+        $hasil = $this->CQUERY->getHasil('hidrografi');
 
         return view('kegiatan.hidrografi', [
-            's1' => $s1,
+            'kegiatan' => $kegiatan,
+            'hasil' => $hasil,
             'renderer' => new \Contentful\RichText\Renderer(),
         ]);
     }
     public function fotogrametri()
     {
-        $s1 = $this->CQUERY->getKegiatan('fotogrametri');
+        $kegiatan = $this->CQUERY->getKegiatan('fotogrametri');
+        $hasil = $this->CQUERY->getHasil('fotogrametri');
 
         return view('kegiatan.fotogrametri', [
-            's1' => $s1,
+            'kegiatan' => $kegiatan,
+            'hasil' => $hasil,
             'renderer' => new \Contentful\RichText\Renderer(),
         ]);
     }
     public function gnss()
     {
-        $s1 = $this->CQUERY->getKegiatan('gnss');
+        $kegiatan = $this->CQUERY->getKegiatan('gnss');
+        $hasil = $this->CQUERY->getHasil('gnss');
 
         return view('kegiatan.gnss', [
-            's1' => $s1,
+            'kegiatan' => $kegiatan,
+            'hasil' => $hasil,
             'renderer' => new \Contentful\RichText\Renderer(),
         ]);
     }
     public function topografi()
     {
-        $s1 = $this->CQUERY->getKegiatan('topografi');
+        $kegiatan = $this->CQUERY->getKegiatan('topografi');
+        $hasil = $this->CQUERY->getHasil('topografi');
 
         return view('kegiatan.topografi', [
-            's1' => $s1,
+            'kegiatan' => $kegiatan,
+            'hasil' => $hasil,
             'renderer' => new \Contentful\RichText\Renderer(),
         ]);
     }

@@ -12,23 +12,32 @@
 	</header>
 	<section class="uk-section uk-section-muted">
     <div class="uk-container">
-    <div class='uk-card uk-child-width-1-5@s uk-grid uk-grid-collapse uk-flex-middle' uk-grid=''>
-        <div class='uk-card-body uk-width-3-5@s' uk-scrollspy="cls: uk-animation-slide-left;">
-            <div class="uk-grid-margin uk-grid uk-grid-stack">
-                <div class="uk-width-1-1@m uk-first-column">
-                <h2 class='uk-heading-bullet'>Tentang</h2>
-                </div>
-            </div>                
-			<p>Campurejo adalah sebuah desa di Kecamatan Panceng, Kabupaten Gresik, provinsi Jawa Timur. Campurejo merupakan desa yang berbatasan langsung dengan Kabupaten Lamongan, bentuk geografis Campurejo seperti pistol yang mana pada bagian visornya terdapat 4 desa yaitu Paloh, Weru, Sidokumpul, Waru Lor</p>
-			<p>Campurejo dipilih menjadi tempat studi kasus untuk melaksanakan kegiatan kemah kerja dan hidrografi oleh Teknik Geomatika ITS angkatan 2017</p>
-        </div>
-        <div class='uk-flex-last@s uk-card-media-left uk-cover-container uk-width-2-5@s' uk-scrollspy="cls: uk-animation-slide-right;">
-			<div class="gtco-video gtco-bg" style="background-image: url(img/terasering.jpg); ">
-				<a href="https://www.youtube.com/watch?v=oWnwhCDzv7E" class="popup-youtube"><i class="icon-video2"></i></a>
-				<div class="overlay"></div>
+		<div class='uk-card uk-child-width-1-5@s uk-grid uk-grid-collapse uk-flex-middle' uk-grid=''>
+			<div class='uk-card-body uk-width-3-5@s' uk-scrollspy="cls: uk-animation-slide-left;">
+				<div class="uk-grid-margin uk-grid uk-grid-stack">
+					<div class="uk-width-1-1@m uk-first-column">
+					<h2 class='uk-heading-bullet'>Tentang</h2>
+					</div>
+				</div>                
+				<p>Campurejo adalah sebuah desa di Kecamatan Panceng, Kabupaten Gresik, provinsi Jawa Timur. Campurejo merupakan desa yang berbatasan langsung dengan Kabupaten Lamongan, bentuk geografis Campurejo seperti pistol yang mana pada bagian visornya terdapat 4 desa yaitu Paloh, Weru, Sidokumpul, Waru Lor</p>
+				<p>Campurejo dipilih menjadi tempat studi kasus untuk melaksanakan kegiatan kemah kerja dan hidrografi oleh Teknik Geomatika ITS angkatan 2017</p>
 			</div>
-        </div>               
-    </div>
+			<div class='uk-flex-last@s uk-card-media-left uk-cover-container uk-width-2-5@s' uk-scrollspy="cls: uk-animation-slide-right;">
+				<div class="gtco-video gtco-bg" style="background-image: url(img/terasering.jpg); ">
+					<a href="https://www.youtube.com/watch?v=oWnwhCDzv7E" class="popup-youtube"><i class="icon-video2"></i></a>
+					<div class="overlay"></div>
+				</div>
+			</div>
+		</div>
+		<div class="uk-inline uk-light">
+            <img src="images/home.jpg" alt="">
+            <div class="uk-position-center">
+                <span uk-overlay-icon></span>
+            </div>
+        </div>
+		<div uk-lightbox>
+			<a class="uk-button" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-poster="/img/home.jpg">asds</a>
+    	</div>
     </section>
 
 	<section class="uk-section">

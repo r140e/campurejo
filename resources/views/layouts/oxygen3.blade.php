@@ -28,9 +28,14 @@
 	</style>
 </head>
 <body">
-	
-	@include('layouts.partials.navSticky')
-        @yield('content')
+	<div class="uk-background-primary" uk-sticky="sel-target: .uk-navbar; cls-active: uk-navbar-sticky">
+	@component('layouts.partials.nav')
+		@slot('navbarModel')
+			uk-navbar uk-margin-remove
+        @endslot
+	@endcomponent
+	</div>
+    @yield('content')
 	@include('layouts.partials.modalnav')
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.3.7/js/uikit.min.js" type="text/javascript"></script>

@@ -4,8 +4,8 @@
 	<header class="uk-section-xlarge uk-light uk-background-cover" style="background-image:url(theme/oxygen/images/img_bg_1.jpg);">
 	<div class="uk-container">
 		<div class="uk-card uk-text-center animate-box" data-animate-effect="fadeIn">
-			<h1 class="uk-h1">Hidrografi</h1>
-			<p>Pengukuran ini dilakukan untuk mendapatkan bentuk geografis dari permukaan bawah laut yang sejajar dengan garis pantai</p>
+			<h1 class="uk-h1">GNSS</h1>
+			<p>survey meliputi pengukuran gps untuk titik kontrol pemetaan</p>
 		</div>
 	</div>
 	</header>
@@ -17,7 +17,7 @@
 	@foreach ($kegiatan as $kegiatan)
 	<div class="uk-grid-margin uk-grid" uk-grid="">
 	@if ($kegiatan->urutanKegiatan % 2 == 0)
-		<div class="uk-grid-item-match uk-flex-middle uk-flex-auto uk-width-3-5@m">                        
+		<div class="uk-grid-item-match uk-flex-middle uk-flex-auto uk-width-1-3@m">                        
 			<div class="uk-panel uk-width-1-1">                
 				<h2 class="uk-heading-small">
 					<span class="uk-text-background">{{ $kegiatan->nama }}</span>
@@ -25,7 +25,7 @@
 				<p class="uk-text-lead">{!! $renderer->render($kegiatan->deskripsi) !!}</p>
 			</div>
 		</div>
-		<div class="uk-grid-item-match uk-flex-middle uk-flex-auto uk-width-2-5@m">
+		<div class="uk-grid-item-match uk-flex-middle uk-flex-auto uk-width-2-3@m">
 			<div class="uk-panel uk-width-1-1">
 				<div class="uk-margin">
 					<img class="uk-box-shadow-xlarge" alt="" src="{{ $kegiatan->thumbnail->getFile()->getUrl() }}" uk-img=""/>
@@ -33,14 +33,14 @@
 			</div>                        
 		</div>
 	@else
-		<div class="uk-grid-item-match uk-flex-middle uk-flex-auto uk-width-2-5@m">
+		<div class="uk-grid-item-match uk-flex-middle uk-flex-auto uk-width-2-3@m">
 			<div class="uk-panel uk-width-1-1">
 				<div class="uk-margin">
 					<img class="uk-box-shadow-xlarge" alt="" src="{{ $kegiatan->thumbnail->getFile()->getUrl() }}" uk-img=""/>
 				</div>
 			</div>                        
 		</div>
-		<div class="uk-grid-item-match uk-flex-middle uk-flex-auto uk-width-3-5@m">                        
+		<div class="uk-grid-item-match uk-flex-middle uk-flex-auto uk-width-1-3@m">                        
 			<div class="uk-panel uk-width-1-1">                
 				<h2 class="uk-heading-small">
 					<span class="uk-text-background">{{ $kegiatan->nama }}</span>
@@ -61,7 +61,7 @@
 						<img src="{{ $hasil->thumbnail->getFile()->getUrl() }}" alt="">
 					</div>
 					<div class="uk-card-body">
-						<h3 class="uk-card-title"><a href="{{ $hasil->tautan ?? '#' }}">{{ $hasil->nama }}</a></h3>
+						<h3 class="uk-card-title"><a href="{{ $hasil->tautan }}">{{ $hasil->nama }}</a></h3>
 					</div>
 				</div>
 			</div>
